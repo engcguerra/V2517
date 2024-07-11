@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +17,10 @@
     <p>começar um repositório local 
         <code>git init</code>
     </p>
+    <p>
+        staging area<br>
+        <img src="{% static 'git_staging_area.png' width='300' %}">
+    </p>
     <p>podemos adicionar um ficheiro ao 
         "staging area/ficheiros prontos para a próxima versão do programa" <br>
         <code>git add nomeficheiro</code> 
@@ -33,6 +38,16 @@
     </p>
     <p>consultar as várias versões da aplicação / vários commits
         <code>git log</code>
+        <br>
+        <code>git log --oneline</code>
+    </p>
+    <p>
+       <p>para ver uma dada versão anterior do código:<br>
+        <code>git checkout codigocommit</code>
+       <p>para sair:
+          <code>git switch master</code> ou <code>git switch main</code>
+       </p>
+    </p>
     </p>
 </body>
 </html>
